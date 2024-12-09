@@ -1,11 +1,10 @@
 body {
-    background-color: #f4f4f9;
+    background: radial-gradient(circle, rgb(140, 226, 252) 20%, rgb(61, 159, 250) 60%, rgb(0, 89, 255) 100%);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -25,5 +24,48 @@ a:hover {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 100px;
+    
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.2); /* Transparence avec blanc */
+    backdrop-filter: blur(10px); /* Flou de fond pour un effet "verre" */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure subtile */
+    border-radius: 15px; /* Angles arrondis */
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre pour la profondeur */
+}
+
+/* Titre */
+.card h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Paragraphe */
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Bouton */
+.card button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2575fc;
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    background: rgba(255, 255, 255, 0.8);
 }

@@ -7,7 +7,7 @@ body {
 
 main {
     display: flex;
-    justify-content: center; /* Centre horizontalement */
+    justify-content: center;
     align-items: center;
     height: 70vh;
 }
@@ -50,6 +50,10 @@ img {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+.card img {
+    margin-left: 30%;
+}
 
 .card h1 {
     font-size: 1.8em;

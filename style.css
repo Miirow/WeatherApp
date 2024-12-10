@@ -4,6 +4,15 @@ body {
     padding: 0;
 }
 
+
+main {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+    height: 70vh;
+}
+
+
 header {
     color: white;
     padding: 1rem;
@@ -30,31 +39,31 @@ img {
 
 
 .card {
-    background: rgba(255, 255, 255, 0.2); /* Transparence avec blanc */
-    backdrop-filter: blur(10px); /* Flou de fond pour un effet "verre" */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure subtile */
-    border-radius: 15px; /* Angles arrondis */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 15px; 
     padding: 20px;
     max-width: 300px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre pour la profondeur */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Titre */
+
 .card h1 {
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-/* Paragraphe */
+
 .card p {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-/* Bouton */
+
 .card button {
     padding: 10px 20px;
     background: rgba(255, 255, 255, 0.5);
@@ -66,6 +75,41 @@ img {
     transition: all 0.3s ease;
 }
 
+
 .card button:hover {
     background: rgba(255, 255, 255, 0.8);
+}
+
+
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 1 auto;
+}
+
+
+.search-input {
+    
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+    outline: none;
+    background: transparent;
+    
+}
+
+
+.search-button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #0056b3;
 }

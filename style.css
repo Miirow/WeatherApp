@@ -2,6 +2,7 @@ body {
     background: radial-gradient(circle, rgb(140, 226, 252) 20%, rgb(61, 159, 250) 60%, rgb(0, 89, 255) 100%);
     margin: 0;
     padding: 0;
+    overflow: hidden
 }
 
 
@@ -116,4 +117,17 @@ img {
 
 .search-button:hover {
     background: #0056b3;
+}
+
+#sun {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #ffd700, #ff8c00);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 20px #ff8c00;
+    opacity: 1;
+    transition: opacity 1s ease-out;
 }

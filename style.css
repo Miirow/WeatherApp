@@ -129,5 +129,5 @@ img {
     border-radius: 50%;
     box-shadow: 0 0 50px 20px #ff8c00;
     opacity: 1;
-    transition: opacity 0.2s ease-out;
+    transition: opacity 1s ease-out;
 }

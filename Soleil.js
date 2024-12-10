@@ -6,7 +6,7 @@ const height = window.innerHeight;
 
 let progress = 0;
 const speed = 0.0015;
-const delay = 1500;
+const delay = 3000;
 
 
 function animateSun() {

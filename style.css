@@ -138,6 +138,7 @@ img {
     background: #fff;
     border-radius: 50%;
     box-shadow: -15px 10px 20px rgba(0, 0, 0, 0.1);
+    animation: moveClouds var(--cloud-speed) linear infinite;
 }
 
 .cloud:before,
@@ -162,7 +163,7 @@ img {
     left: 60px;
 }
 
-/* Positionnement des nuages */
+
 .cloud1 {
     width: 130px;
     height: 160px;
@@ -202,9 +203,4 @@ img {
 @keyframes moveClouds {
     0% { transform: translateX(-100vw); }
     100% { transform: translateX(100vw); }
-}
-
-.cloud {
-    animation: moveClouds 12s linear infinite;
-    
 }

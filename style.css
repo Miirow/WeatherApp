@@ -132,3 +132,79 @@ img {
     opacity: 1;
     transition: opacity 0.2s ease-out;
 }
+
+.cloud {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: -15px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cloud:before,
+.cloud:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.cloud:before {
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    left: -40px;
+}
+
+.cloud:after {
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    left: 60px;
+}
+
+/* Positionnement des nuages */
+.cloud1 {
+    width: 130px;
+    height: 160px;
+    top: 0px;
+    left: 0px;
+}
+
+.cloud2 {
+    width: 130px;
+    height: 160px;
+    top: 50px;
+    left: 1000px;
+}
+
+.cloud3 {
+    width: 130px;
+    height: 160px;
+    top: 200px;
+    left: 300px;
+}
+
+.cloud4 {
+    width: 130px;
+    height: 160px;
+    top: 650px;
+    left: 1300px;
+}
+
+.cloud5 {
+    width: 130px;
+    height: 160px;
+    top: 750px;
+    left: 600px;
+}
+
+
+@keyframes moveClouds {
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(100vw); }
+}
+
+.cloud {
+    animation: moveClouds 12s linear infinite;
+    
+}

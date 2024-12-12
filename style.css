@@ -1,4 +1,9 @@
+root{
+    color:black;
+}
+
 body {
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
     background: radial-gradient(circle, rgb(140, 226, 252) 20%, rgb(61, 159, 250) 60%, rgb(0, 89, 255) 100%);
     margin: 0;
     padding: 0;
@@ -15,14 +20,13 @@ main {
 
 
 header {
-    color: white;
     padding: 1rem;
     text-align: center;
+    z-index: 10;
 }
 
 
 a {
-    color: #007bff;
     text-decoration: none;
 }
 
@@ -47,7 +51,6 @@ img {
     padding: 20px;
     max-width: 300px;
     text-align: center;
-    color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-top: 100px;
 }
@@ -131,18 +134,18 @@ img {
     box-shadow: 0 0 50px 20px #ff8c00;
     opacity: 1;
     transition: opacity 0.2s ease-out;
+    z-index: -10;
 }
 
 .cloud {
     position: absolute;
     background: #fff;
-    border-radius: 50%;
     box-shadow: -15px 10px 20px rgba(0, 0, 0, 0.1);
-    animation: moveClouds var(--cloud-speed) linear infinite;
 }
 
 .cloud:before,
-.cloud:after {
+.cloud:after,
+.cloud-top {
     content: '';
     position: absolute;
     background: #fff;
@@ -150,53 +153,66 @@ img {
 }
 
 .cloud:before {
-    width: 120px;
-    height: 120px;
-    top: 40px;
-    left: -40px;
+    width: 135px;
+    height: 135px;
+    top: -35px;
+    left: -60px;
 }
 
 .cloud:after {
-    width: 120px;
-    height: 120px;
-    top: 40px;
+    width: 110px;
+    height: 110px;
+    top: -10px;
     left: 60px;
 }
 
+.cloud .cloud-top {
+    width: 100px;
+    height: 100px;
+    top: -70px;
+    left: 30px;
+}
 
 .cloud1 {
-    width: 130px;
-    height: 160px;
-    top: 0px;
+    width: 120px;
+    height: 100px;
+    top: 50px;
     left: 0px;
+    animation: moveClouds var(--cloud-speed) linear infinite;
+    z-index: -8;
 }
 
 .cloud2 {
-    width: 130px;
-    height: 160px;
-    top: 50px;
+    width: 120px;
+    height: 100px;
+    top: 100px;
     left: 1000px;
+    animation: moveClouds var(--cloud-speed) linear infinite;
 }
 
 .cloud3 {
-    width: 130px;
-    height: 160px;
-    top: 200px;
+    width: 120px;
+    height: 100px;
+    top: 250px;
     left: 300px;
+    z-index: -1;
+    animation: moveClouds var(--cloud-speed) linear infinite;
 }
 
 .cloud4 {
-    width: 130px;
-    height: 160px;
-    top: 650px;
+    width: 120px;
+    height: 100px;
+    top: 700px;
     left: 1300px;
+    animation: moveClouds var(--cloud-speed) linear infinite;
 }
 
 .cloud5 {
-    width: 130px;
-    height: 160px;
-    top: 750px;
+    width: 120px;
+    height: 100px;
+    top: 800px;
     left: 600px;
+    animation: moveClouds var(--cloud-speed) linear infinite;
 }
 
 

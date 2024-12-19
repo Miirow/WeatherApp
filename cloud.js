@@ -23,18 +23,6 @@ document.getElementById('search-form').addEventListener('submit', async function
     }
 });
 
-function updateWeatherInfo(data) {
-    document.getElementById('city-name').textContent = data.name || '--';
-    document.getElementById('temperature').innerHTML = `<b>${Math.round(data.main.temp)}°C</b>`;
-    document.getElementById('humidity').textContent = `${data.main.humidity} % Humidité`;
-    document.getElementById('wind-speed').textContent = `${Math.round(data.wind.speed)} km/h Vitesse du vent`;
-
-    const iconCode = data.weather[0].icon;
-    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    const weatherIcon = document.getElementById('weather-icon');
-    weatherIcon.src = iconUrl;
-    weatherIcon.style.display = 'block';
-}
 
 function adjustCloudSpeed(windSpeed) {
     // Calculer la durée de l'animation en fonction de la vitesse du vent

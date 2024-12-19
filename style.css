@@ -7,7 +7,7 @@ body {
     background: radial-gradient(circle, rgb(140, 226, 252) 20%, rgb(61, 159, 250) 60%, rgb(0, 89, 255) 100%);
     margin: 0;
     padding: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 main {

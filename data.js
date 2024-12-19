@@ -1,5 +1,4 @@
 const API_KEY = '7e977715948c7c7738668da30ec1ffa1';
-
 document.getElementById('search-form').addEventListener('submit', async function (e) {
     e.preventDefault();
     const city = document.getElementById('city-input').value;
